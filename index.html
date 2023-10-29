@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GorylTech</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- <link rel="stylesheet" href="styleindex.css" type="text/css"> -->
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
+    <script type="module" src="threejsscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script type="module" src="spline.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.480/build/runtime.js"
+        }
+      }
+    </script> -->
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="https://vectorified.com/images/gorilla-icon-1.png" alt="goryl">
+                <h2><em>Goryl's </em>Instruments</h2>
+            </div>
+            <div class="nav">
+                <button onclick="location.href='index.html'">Main page</button>
+                <button onclick="location.href='products.html'">Our products</button>
+                <button onclick="location.href='cart.html'">Cart</button>
+            </div>
+        </div>
+    </header>
+    <section class="heading">
+        <h5>
+            UPGRADE YOUR GAME
+        </h5>
+        <h1>
+            Every spy's kit<em>.</em>
+        </h1>
+        <h3>
+            Find out more below
+        </h3>
+        <div class="panel1" id="pan1"><div class="panel1inside"></div></div>
+        <div class="panel2" id="pan2"><div class="panel2inside"></div></div>
+        <div class="panel3" id="pan3"><div class="panel3inside"></div></div>
+        <div class="panel4" id="pan4"><div class="panel4inside"></div></div>
+        <!-- gsap panels -->
+        <div class="panel5" id="pan5"><div class="panel4inside"></div></div>
+        <div class="panel6" id="pan6"><div class="panel4inside"></div></div>
+        <div class="panel7" id="pan7"><div class="panel4inside"></div></div>
+        <div class="panel8" id="pan8"><div class="panel4inside"></div></div>
+        <div class="panel9" id="pan9"><div class="panel4inside"></div></div>
+        <div class="panel10" id="pan10"><div class="panel4inside"></div></div>
+        <!-- gsap panels end -->
+        <div class="line"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </section>
+    <section class="anim">
+        <div class="outercanv" id="canvasanim">
+            <canvas id="canvas"></canvas>
+            <div class="textanim">
+                <p id="text1">Precision<em>.</em></p>
+                <p id="text2">All of our products are made with utmost precision- to ensure no risk of a hand slipped.</p>
+                <p id="text3">Flexibility<em>.</em></p>
+                <p id="text4">Any situation you might find yourself in- we have the solution.</p>
+                <p id="text5">Quality<em>.</em></p>
+                <p id="text6">Our items are of greatest quality- to make sure you get exactly what you pay for</p>
+                <p id="text7">Durability<em>.</em></p>
+                <p id="text8">Each part and ware is made from the best materials you can find- made to last a lifetime</p>
+            </div>
+        </div>
+    </section>
+    <div class="center">
+        <h1>TL<em>;</em>DR</h1>
+    </div>
+    <div class="arrow"></div>
+    <div class="expand">
+    <section class="cards">
+        <div class="cards-wrap">
+            <div class="card1">
+                <h1>Precision<em>.</em></h1>
+                <p>All of our products are made with utmost precision- to ensure no risk of a hand slipped.</p>
+                <img src="lockipickset1.png" alt="">
+            </div>
+            <div class="card2">
+                <h1>Flexibility<em>.</em></h1>
+                <p>Any situation you might find yourself in- we have the solution.</p>
+                <img src="recorder.png" alt="">
+            </div>
+            <div class="card3">
+                <h1>Quality<em>.</em></h1>
+                <p>Our items are of greatest quality- to make sure you get exactly what you pay for</p>
+                <img src="minicam.png" alt="">
+            </div>
+            <div class="card4">
+                <h1>Durability<em>.</em></h1>
+                <p>Each part and ware is made from the best materials you can find- made to last a lifetime</p>
+                <img src="recorder2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="line4"></div>
+    <div class="line5"></div>
+    <div class="line6"></div>
+    <!-- <footer>
+        <p class="big">
+            Powered by <em>Goryl industries</em>
+        </p>
+        <p class="em">Contact us:</p>
+        <p>+48 000 000 000</p>
+    </footer> -->
+    <!-- <div id="blob"></div>
+    <div id="blur"></div> -->
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+
+                <a href="#">Products</a>
+
+                <a href="#">About</a>
+
+                <a href="#">User agreement</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p>Goryl industries &copy; 2015</p>
+        </div>
+
+    </footer>
+    <div class="colorbottom">
+        <a onclick="window.scrollTo(0, 0);">- scroll to top -</a>
+    </div>
+</body>
+</html>
