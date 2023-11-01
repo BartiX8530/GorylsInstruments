@@ -135,6 +135,29 @@
                     }
                 }
             }
+        window.addEventListener("load", function() {
+                gsap.fromTo('.panel1', {yPercent: 0}, {yPercent: -20, scrollTrigger: {
+            scrub: true,
+            start: '-8%',
+            end: '35%',
+            markers: false,
+        },
+            });
+            gsap.fromTo('.panel2', {yPercent: 0}, {yPercent: -40, scrollTrigger: {
+            scrub: true,
+            start: '-8%',
+            end: '100%',
+            markers: false,
+        },
+            });
+            gsap.fromTo('.panel3', {yPercent: 0}, {yPercent: -20, scrollTrigger: {
+            scrub: true,
+            start: '-8%',
+            end: '100%',
+            markers: false,
+        },
+            });
+        });
     </script>
 </head>
 <body>
@@ -151,6 +174,18 @@
             </div>
         </div>
     </header>
+    <section class="heading">
+        <div class="panel1" id="pan1"><div class="panel1inside"></div></div>
+        <div class="panel2" id="pan1"><div class="panel1inside"></div></div>
+        <div class="panel3" id="pan1"><div class="panel1inside"></div></div>
+        <div class="heading-wrap">
+            <h1>Our products<em>.</em></h1>
+            <p>Here you can find all of our products, from lockpicking sets to recorders and cameras.</p>
+        </div>
+        <div class="line"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </section>
     <section class="cards">
         <div class="cards-wrap">
             <div class="card1">
@@ -183,27 +218,27 @@
     <section class="cart-buttons">
         <div class="buttonset1">
             <button class="minus" onclick="counter('goto1', 'minus')">-</button>
-            <button class="goto" id="goto1" onmouseover="changeText('Go to cart', 'goto1')" onmouseout="changeback(goto1value, 'goto1')" onclick="location.href='cart.html'">0</button>
+            <button class="goto" id="goto1" onclick="location.href='cart.html'" onmouseover="changeText('Go to cart', 'goto1')" onmouseout="changeback(goto1value, 'goto1')">0</button>
             <button class="plus" onclick="counter('goto1', 'plus')">+</button>
         </div>
         <div class="buttonset2">
             <button class="minus" onclick="counter('goto2', 'minus')">-</button>
-            <button class="goto" id="goto2" onmouseover="changeText('Go to cart', 'goto2')" onmouseout="changeback(goto1value, 'goto2')" onclick="location.href='cart.html'">0</button>
+            <button class="goto" id="goto2" onclick="location.href='cart.html'" onmouseover="changeText('Go to cart', 'goto2')" onmouseout="changeback(goto1value, 'goto2')">0</button>
             <button class="plus" onclick="counter('goto2', 'plus')">+</button>
         </div>
         <div class="buttonset3">
             <button class="minus" onclick="counter('goto3', 'minus')">-</button>
-            <button class="goto" id="goto3" onmouseover="changeText('Go to cart', 'goto3')" onmouseout="changeback(goto1value, 'goto3')" onclick="location.href='cart.html'">0</button>
+            <button class="goto" id="goto3" onclick="location.href='cart.html'" onmouseover="changeText('Go to cart', 'goto3')" onmouseout="changeback(goto1value, 'goto3')">0</button>
             <button class="plus" onclick="counter('goto3', 'plus')">+</button>
         </div>
         <div class="buttonset4">
             <button class="minus" onclick="counter('goto4', 'minus')">-</button>
-            <button class="goto" id="goto4" onmouseover="changeText('Go to cart', 'goto4')" onmouseout="changeback(goto1value, 'goto4')" onclick="location.href='cart.html'">0</button>
+            <button class="goto" id="goto4" onclick="location.href='cart.html'" onmouseover="changeText('Go to cart', 'goto4')" onmouseout="changeback(goto1value, 'goto4')">0</button>
             <button class="plus" onclick="counter('goto4', 'plus')">+</button>
         </div>
         <div class="buttonset5">
             <button class="minus" onclick="counter('goto5', 'minus')">-</button>
-            <button class="goto" id="goto5" onmouseover="changeText('Go to cart', 'goto5')" onmouseout="changeback(goto1value, 'goto5')" onclick="location.href='cart.html'">0</button>
+            <button class="goto" id="goto5" onclick="location.href='cart.html'" onmouseover="changeText('Go to cart', 'goto5')" onmouseout="changeback(goto1value, 'goto5')">0</button>
             <button class="plus" onclick="counter('goto5', 'plus')">+</button>
         </div>
     </section>

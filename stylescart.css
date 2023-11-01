@@ -346,7 +346,6 @@ header {
   background-image: radial-gradient(100% 100% at 100% 0, var(--darkmode-content) 0, var(--darkmode-content-darker) 100%);
   border: 0;
   border-radius: 6px;
-  border-top-right-radius: 1rem;
   box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
   box-sizing: border-box;
   color: #fff;
@@ -385,6 +384,58 @@ header {
 .blik:active {
   box-shadow: var(--darkmode-content2) 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+.input {
+  color: var(--darkmode-text);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--darkmode-lighter);
+  background-color: var(--darkmode-primary);
+  height: 65px;
+  width: 215px;
+  margin-top: 20px;
+  font-family: var(--main-font);
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+.inputcont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bliknext {
+  height: 64px;
+  width: 105px;
+  margin-top: 19px;
+  margin-left: 10px;
+  background-color: transparent;
+  border-radius: 8px;
+  border-style: solid;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  /* text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px; */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-width: 2px;
+  transition: all .1s linear;
+  border-color: var(--darkmode-lighter);
+}
+
+.bliknext:hover {
+  transition-duration: 0.2s;
+  background-color: var(--darkmode-lighter);
 }
 
 .credit {
@@ -526,4 +577,129 @@ header {
 .giftcard:active {
   box-shadow: var(--darkmode-content2) 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+.close {
+  transform: scale(0);
+  margin-bottom: -85px;
+}
+
+.open {
+  transform: scale(1);
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  border-top-right-radius: 1rem;
+  border-color: var(--darkmode-lighter);
+  width: 330px;
+  line-height: 0px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: var(--main-font);
+}
+
+.payment h1 {
+  font-size: 40px;
+  font-weight: 100;
+  color: var(--darkmode-text);
+}
+
+.payment h4 {
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: 6px;
+  color: gray;
+}
+
+.payment h2 {
+  font-size: 20px;
+  font-weight: 100;
+  color: var(--darkmode-text);
+}
+
+.payment h3 {
+  font-size: 20px;
+  font-weight: 100;
+  color: gray;
+}
+
+.payment a {
+  font-size: 15px;
+  font-weight: 100;
+  color: var(--darkmode-content);
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.total h3 {
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--darkmode-text);
+}
+
+.total h2 {
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--darkmode-text);
+}
+
+.panel1 {
+  background: rgba( 131, 44, 198, 0.4 );
+  box-shadow: 0 0px 30px 0 rgba( 131, 44, 198, 0.2 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.03 );
+  border-radius: 9999rem;
+  opacity: 0.3;
+  position: absolute;
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  top: 25vh;
+  right: 7%;
+  z-index: -10;
+}
+
+.panel2 {
+  background: rgba( 131, 44, 198, 0.4 );
+  box-shadow: 0 0px 30px 0 rgba( 131, 44, 198, 0.2 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.03 );
+  border-radius: 9999rem;
+  opacity: 0.3;
+  position: absolute;
+  width: 45%;
+  aspect-ratio: 1 / 1;
+  top: 60vh;
+  left: -8%;
+  z-index: -9999;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }

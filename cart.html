@@ -10,6 +10,27 @@
     <script src="scriptprod.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        blik = () => {
+            element = document.querySelector(".inputcont");
+            if (element.classList.contains("open")) {
+                element.classList.add("close");
+                element.classList.remove("open");
+            } else {
+                element.classList.add("open");
+                element.classList.remove("close");
+            }
+        }
+        credit = () => {
+            alert("credit card payment is not available at the moment");
+        }
+        fnaf = () => {
+            alert("you have been banned for 24 hours for trying to use fnaf reference");
+        }
+        giftcard = () => {
+            alert("no");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -25,6 +46,8 @@
             </div>
         </div>
     </header>
+    <div class="panel1" id="pan1"><div class="panel1inside"></div></div>
+    <div class="panel2" id="pan1"><div class="panel1inside"></div></div>
     <section class="cartwrap">
         <div class="left">
             <div class="item it1">
@@ -44,10 +67,30 @@
             </div>
         </div>
         <div class="right">
-            <button class="blik" role="button">BLIK</button>
-            <button class="credit" role="button">Credit card</button>
-            <button class="fnaf" role="button">*fnaf reference*</button>
-            <button class="giftcard" role="button">giftcard</button>
+            <div class="payment">
+                <h1>PAYMENT</h1>
+                <h4>...................</h4>
+                <div class="inline">
+                <h3>Shipping:</h3>
+                <h2>Free!</h2>
+                </div>
+                <div class="inline">
+                <h3>Tax:</h3>
+                <h2>3zł <a href="https://youtu.be/zR7LOtMix9w?t=158"> Why?</a></h2>
+                </div>
+                <div class="inline total">
+                <h3>Total:</h3>
+                <h2 class="total">2999,97zł</h2>
+                </div>
+            </div>
+            <button onclick="blik()" class="blik" role="button">BLIK</button>
+                <div class="inputcont close">
+            <input type="text" class="input" placeholder="Kod blik">
+            <button class="bliknext" role="button">NEXT ></button>
+                </div>
+            <button onclick="credit()" class="credit" role="button">Credit card</button>
+            <button onclick="fnaf()" class="fnaf" role="button">*fnaf reference*</button>
+            <button onclick="giftcard()" class="giftcard" role="button">giftcard</button>
         </div>
     </section>
     <footer class="footer-distributed">
