@@ -404,6 +404,7 @@ header {
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
+  margin-top: 10px;
 }
 
 .cart-buttons .goto {
